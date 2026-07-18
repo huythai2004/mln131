@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(mkdir -p \"C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Downloads-spst-mln131-spst-mln131/b01ff374-4620-43a9-95fb-2cc7cd77d38d/scratchpad/pw\")",
+      "Bash(npm init *)"
+    ]
+  },
+  "enabledPlugins": {
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true
+  }
+}

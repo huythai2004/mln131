@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cn-red: #C8102E;
+  --color-cn-red-dark: #7A0C1E;
+  --color-cn-red-light: #E84844;
+  --color-cn-gold: #FFD700;
+  --color-cn-gold-dark: #E5B80B;
+  --color-cn-dark: #1A1210;
+  --color-cn-cream: #FFF8EE;
+  --color-cn-cream-dark: #F5E6D0;
+
+  /* High-tech accent: represents the "công nghệ cao" (high-tech) half of the thesis
+     alongside the revolutionary red/gold identity of giai cấp công nhân. */
+  --color-cn-teal: #0EA5A0;
+  --color-cn-teal-dark: #0B7A76;
+  --color-cn-teal-light: #2DD4C7;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Be Vietnam Pro", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-cn-cream);
+  color: var(--color-cn-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  border: none;
+  min-height: 100svh;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Faint circuit-board watermark, used across sections so the "high-tech" thread
+   stays visible even outside the hero without competing with content. */
+.circuit-watermark {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image:
+    linear-gradient(90deg, currentColor 1px, transparent 1px),
+    linear-gradient(currentColor 1px, transparent 1px);
+  background-size: 42px 42px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 90%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 90%);
+}
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+}
+
+/* Thin gradient accent bar for the top edge of cards — reads as a "status/data" strip. */
+.tech-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-cn-teal) 0%, var(--color-cn-teal-light) 50%, transparent 100%);
+  opacity: 0;
+  transform: scaleX(0.3);
+  transform-origin: left;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+}
+.tech-card {
+  position: relative;
+}
+.tech-card:hover .tech-bar {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Soft glow ring on hover, layered on top of the existing border/shadow classes. */
+.tech-glow {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.tech-glow:hover {
+  box-shadow: 0 0 0 1px var(--color-cn-teal-light), 0 8px 24px -8px rgba(14, 165, 160, 0.35);
+}
+
+/* Monospace numeric label style used for stats/data callouts. */
+.tech-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes tech-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+.tech-blink {
+  animation: tech-blink 1.6s ease-in-out infinite;
+}
