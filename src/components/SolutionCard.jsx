@@ -15,7 +15,7 @@ export default function SolutionCard({ item, index }) {
       viewport={{ once: true }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
       layout
-      className="tech-card tech-glow h-full bg-white rounded-xl border border-cn-teal/15 shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
+      className="tech-card tech-glow scan-line h-full bg-white rounded-xl border border-cn-teal/15 shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
     >
       <div className="tech-bar" aria-hidden="true" />
       <button

@@ -1,8 +1,10 @@
 import { useRef, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import * as Icons from 'lucide-react';
 import SectionWrapper from '../components/SectionWrapper';
 import CaseCard from '../components/CaseCard';
+import FloatingTechIcons from '../components/FloatingTechIcons';
 import { caseStudies } from '../data/index';
 
 export default function CaseStudiesSection() {
@@ -28,6 +30,7 @@ export default function CaseStudiesSection() {
 
   return (
     <SectionWrapper id="case-study" dark>
+      <FloatingTechIcons tone="dark" />
       <div className="text-center mb-12">
         <h2 className="text-2xl md:text-4xl font-bold text-cn-cream mb-3">
           Doanh nghiệp công nghệ Việt Nam
@@ -116,8 +119,11 @@ export default function CaseStudiesSection() {
 
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-4 pr-8">
-                  <div className="w-10 h-10 rounded-full bg-cn-teal/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-cn-teal-dark font-bold font-serif text-lg">{activeItem.name[0]}</span>
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cn-teal/15 to-cn-teal/5 border border-cn-teal/20 flex items-center justify-center flex-shrink-0">
+                    {(() => {
+                      const IconComp = Icons[activeItem.icon] || Icons.Cpu;
+                      return <IconComp className="w-5 h-5 text-cn-teal-dark" strokeWidth={1.75} />;
+                    })()}
                   </div>
                   <div className="min-w-0">
                     <h3 className="font-serif font-bold text-cn-red-dark">{activeItem.name}</h3>

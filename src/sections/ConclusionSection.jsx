@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionWrapper from '../components/SectionWrapper';
 import ParallaxLayer from '../components/ParallaxLayer';
+import DigitalRain from '../components/DigitalRain';
 import { FileText, X } from 'lucide-react';
 
 export default function ConclusionSection() {
@@ -9,6 +10,7 @@ export default function ConclusionSection() {
 
   return (
     <SectionWrapper id="ket-luan" dark className="relative">
+      <DigitalRain className="absolute inset-0 w-full h-full opacity-30" />
       <ParallaxLayer speed={0.5} className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cn-red/10 via-transparent to-transparent pointer-events-none" />
       <ParallaxLayer speed={0.3} className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cn-teal/10 via-transparent to-transparent pointer-events-none" />
 

@@ -1,10 +1,12 @@
 import SectionWrapper from '../components/SectionWrapper';
 import ComparisonRow from '../components/ComparisonRow';
+import FloatingTechIcons from '../components/FloatingTechIcons';
 import { comparisonData } from '../data/index';
 
 export default function ComparisonSection() {
   return (
     <SectionWrapper id="so-sanh">
+      <FloatingTechIcons tone="light" />
       <div className="text-center mb-12">
         <h2 className="text-2xl md:text-4xl font-bold text-cn-red-dark mb-3">
           Công nhân truyền thống vs. Nhân lực công nghệ cao

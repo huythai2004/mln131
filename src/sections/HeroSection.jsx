@@ -1,7 +1,54 @@
 import { useEffect, useState, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
+import { Cpu, BrainCircuit, Network, Code2, Binary, Database } from 'lucide-react';
 
 const STAR_PARTICLE_COUNT = 35;
+
+const ORBIT_ICONS = [
+  { Icon: Cpu, angle: 0, radius: 1 },
+  { Icon: BrainCircuit, angle: 60, radius: 1 },
+  { Icon: Network, angle: 120, radius: 1 },
+  { Icon: Code2, angle: 180, radius: 1 },
+  { Icon: Binary, angle: 240, radius: 1 },
+  { Icon: Database, angle: 300, radius: 1 },
+];
+
+function TechOrbit() {
+  return (
+    <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <motion.div
+        className="absolute inset-0"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
+      >
+        <div className="absolute inset-[6%] rounded-full border border-dashed border-cn-teal-light/25" />
+      </motion.div>
+      <motion.div
+        className="absolute inset-0"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 28, repeat: Infinity, ease: 'linear' }}
+      >
+        {ORBIT_ICONS.map(({ Icon, angle }, i) => (
+          <div
+            key={i}
+            className="absolute top-1/2 left-1/2 w-9 h-9 -ml-[18px] -mt-[18px]"
+            style={{
+              transform: `rotate(${angle}deg) translate(0, -140px) rotate(-${angle}deg)`,
+            }}
+          >
+            <motion.div
+              animate={{ rotate: -360 }}
+              transition={{ duration: 28, repeat: Infinity, ease: 'linear' }}
+              className="w-full h-full rounded-full bg-cn-dark/60 border border-cn-teal-light/40 flex items-center justify-center shadow-[0_0_10px_rgba(45,212,199,0.35)]"
+            >
+              <Icon className="w-4 h-4 text-cn-teal-light" strokeWidth={1.75} />
+            </motion.div>
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+}
 
 function ParticleCanvas() {
   const canvasRef = useRef(null);
@@ -120,6 +167,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: 'easeOut', type: 'spring' }}
           className="relative w-56 h-56 md:w-72 md:h-72 mx-auto mb-2 md:mb-4"
         >
+          <TechOrbit />
           <div className="w-full h-full rounded-full bg-cn-gold/20 border-2 border-cn-gold/50 flex items-center justify-center">
             <span className="text-6xl md:text-7xl text-cn-gold">★</span>
           </div>
