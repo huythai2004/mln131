@@ -7,6 +7,7 @@ import TimelineSection from './sections/TimelineSection';
 import ComparisonSection from './sections/ComparisonSection';
 import ChartsSection from './sections/ChartsSection';
 import CaseStudiesSection from './sections/CaseStudiesSection';
+import WorkerGroupsSection from './sections/WorkerGroupsSection';
 import SolutionsSection from './sections/SolutionsSection';
 import QuizSection from './sections/QuizSection';
 import ConclusionSection from './sections/ConclusionSection';
@@ -40,6 +41,7 @@ export default function App() {
         <ComparisonSection />
         <ChartsSection />
         <CaseStudiesSection />
+        <WorkerGroupsSection />
         <SolutionsSection />
         <QuizSection />
         <ConclusionSection />

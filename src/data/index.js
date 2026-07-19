@@ -5,6 +5,7 @@ export const menuItems = [
   { id: 'so-sanh', label: 'So sánh' },
   { id: 'thuc-trang', label: 'Thực trạng' },
   { id: 'case-study', label: 'Case Study' },
+  { id: 'worker-groups', label: 'Đội ngũ' },
   { id: 'giai-phap', label: 'Giải pháp' },
   { id: 'quiz', label: 'Quiz' },
   { id: 'ket-luan', label: 'Kết luận' },
@@ -17,3 +18,4 @@ export { chartData } from './chartData';
 export { caseStudies } from './caseStudies';
 export { solutionsData } from './solutionsData';
 export { quizData } from './quizData';
+export { workerGroups } from './workerGroupsData';

@@ -30,5 +30,21 @@ export const caseStudies = [
     description: "VinAI Research (Vingroup) và Trung tâm Nghiên cứu & Phát triển Samsung tại Việt Nam là đại diện cho đội ngũ công nhân tri thức đỉnh cao, làm việc trong lĩnh vực AI và bán dẫn.",
     connection: "Các trung tâm R&D này quy tụ kỹ sư, tiến sĩ công nghệ cao — tầng lớp 'công nhân tri thức' mới — cho thấy giai cấp công nhân Việt Nam đã vươn tới trình độ quốc tế, tham gia vào chuỗi giá trị toàn cầu, khẳng định sứ mệnh lịch sử trong thời đại 4.0.",
     stats: "500+ kỹ sư AI | 100+ công bố quốc tế | Hợp tác với Samsung, NVIDIA"
+  },
+  {
+    id: "momo",
+    icon: "Banknote",
+    name: "MoMo FinTech",
+    description: "Siêu ứng dụng tài chính với 31 triệu người dùng — MoMo là hình mẫu về đội ngũ kỹ sư FinTech Việt Nam xây dựng sản phẩm 'made in Vietnam' đạt đẳng cấp quốc tế, phục vụ tài chính toàn diện cho mọi tầng lớp nhân dân.",
+    connection: "MoMo thể hiện tư tưởng phục vụ nhân dân trong hành động thực tiễn: đội ngũ công nhân tri thức FinTech đang dân chủ hóa tài chính, đưa dịch vụ ngân hàng đến vùng sâu vùng xa — sứ mệnh xã hội thiết thực của giai cấp công nhân thời đại số.",
+    stats: "31 triệu người dùng | 200+ dịch vụ tài chính | Unicorn tỷ đô đầu tiên"
+  },
+  {
+    id: "phenikaa",
+    icon: "Bot",
+    name: "Phenikaa MaaS / VinFast R&D",
+    description: "Đại diện cho đội ngũ kỹ sư Tự động hóa và Robotics Việt Nam — những người đang xây dựng nhà máy thông minh, lập trình robot công nghiệp và phát triển xe điện tự lái 'made in Vietnam'.",
+    connection: "Đây là biểu hiện rõ nét nhất của xu hướng 'trí tuệ hóa' giai cấp công nhân: từ người đứng bên dây chuyền cơ khí sang người thiết kế và điều khiển toàn bộ hệ thống tự động, thể hiện hao phí trí lực thay thế hao phí cơ bắp trong nền sản xuất hiện đại.",
+    stats: "500+ kỹ sư R&D | 95% tự động hóa nhà máy VinFast | Hợp tác BMW, Bosch"
   }
 ];

@@ -94,5 +94,53 @@ export const quizData = [
     ],
     correct: 1,
     explanation: "Giải pháp phát triển nhân lực công nghệ cao đòi hỏi sự kết hợp đồng bộ nhiều mặt: đổi mới giáo dục, xây dựng ý thức giai cấp, chính sách đãi ngộ, phát huy vai trò tổ chức Đảng và mô hình kết nối nhà trường - doanh nghiệp - nhà nước."
+  },
+  {
+    id: 9,
+    question: "Nhóm công nhân tri thức nào đang được Việt Nam ưu tiên đào tạo 50.000 người đến năm 2030?",
+    options: [
+      "Kỹ sư phần mềm",
+      "Kỹ sư bán dẫn / vi mạch",
+      "Chuyên gia an ninh mạng",
+      "Kỹ sư AI"
+    ],
+    correct: 1,
+    explanation: "Chiến lược phát triển ngành công nghiệp bán dẫn Việt Nam (2023) đặt mục tiêu đào tạo 50.000 kỹ sư bán dẫn đến năm 2030, xác định đây là ngành chiến lược quốc gia trong chuỗi cung ứng toàn cầu."
+  },
+  {
+    id: 10,
+    question: "Hơn 530.000 kỹ sư CNTT tại Việt Nam hiện nay thuộc nhóm 'công nhân tri thức' nào đông đảo nhất?",
+    options: [
+      "Chuyên gia an ninh mạng",
+      "Kỹ sư bán dẫn",
+      "Kỹ sư phần mềm / Backend & Cloud",
+      "Kỹ sư tự động hóa"
+    ],
+    correct: 2,
+    explanation: "Với hơn 530.000 kỹ sư (2024), đội ngũ kỹ sư phần mềm là nhóm đông đảo nhất trong lực lượng công nhân tri thức công nghệ cao Việt Nam, đang vận hành hạ tầng số cho toàn bộ nền kinh tế."
+  },
+  {
+    id: 11,
+    question: "Tư tưởng của Mác về 'hao phí lao động trí lực thay thế hao phí cơ bắp' thể hiện rõ nhất ở nhóm công nhân nào?",
+    options: [
+      "Công nhân nhà máy dệt may",
+      "Kỹ sư Tự động hóa / Robotics lập trình máy CNC và robot công nghiệp",
+      "Nhân viên văn phòng hành chính",
+      "Tài xế xe tải"
+    ],
+    correct: 1,
+    explanation: "Kỹ sư Tự động hóa & Robotics là nhóm thể hiện rõ nhất sự chuyển dịch từ hao phí cơ bắp sang hao phí trí lực: họ không còn đứng bên máy móc mà lập trình, điều khiển và thiết kế toàn bộ hệ thống tự động — biểu hiện sinh động của xu hướng 'trí tuệ hóa' giai cấp công nhân."
+  },
+  {
+    id: 12,
+    question: "Ứng dụng MoMo phục vụ 31 triệu người dùng được xây dựng bởi đội ngũ công nhân tri thức thuộc nhóm nào?",
+    options: [
+      "Kỹ sư AI / Machine Learning",
+      "Kỹ sư Công nghệ sinh học",
+      "Kỹ sư FinTech / Blockchain",
+      "Kỹ sư Bán dẫn"
+    ],
+    correct: 2,
+    explanation: "MoMo được xây dựng bởi đội ngũ kỹ sư FinTech — nhóm công nhân tri thức đang dân chủ hóa tài chính, đưa dịch vụ ngân hàng đến mọi tầng lớp nhân dân. Đây là ví dụ cụ thể về sứ mệnh phục vụ nhân dân của giai cấp công nhân trong thời đại số."
   }
 ];
